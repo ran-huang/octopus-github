@@ -97,7 +97,7 @@
             })
 
             // Prompt the user for a comment to leave on the selected PRs
-            var comment = prompt('Enter a comment to leave on the selected PRs:');
+            var comment = prompt('Enter a comment to leave on the selected PRs:','/status LGT1');
             if (!comment) {
                 return;
             }
@@ -140,7 +140,7 @@
             var linkElement = document.createElement('a')
             linkElement.setAttribute('href', newLink)
             linkElement.setAttribute('class', 'Link--muted')
-            linkElement.innerHTML = "Files"
+            linkElement.innerHTML = "<strong>Files</strong>"
             linkSpanElement.appendChild(linkElement)
             openedBy.insertAdjacentElement('beforebegin', linkSpanElement)
             openedBy.insertAdjacentElement('beforebegin', dotSpanElement);
